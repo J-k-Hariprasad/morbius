@@ -1,0 +1,404 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: #0a0a23;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Common layout areas */
+.testimonial-cards,
+.features,
+.plans,
+.resume-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card,
+.feature,
+.plan,
+.resume-card {
+  background: #fff;
+  border: 2px solid #1a73e8;
+  padding: 20px;
+  color: #1a73e8;
+  border-radius: 12px;
+  width: 300px;
+}
+
+/* Buttons */
+.see-more-btn,
+.select-plan-btn,
+.select-btn,
+.contact-btn {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.select-plan-btn:hover {
+  background: white;
+  color: #1a73e8;
+}
+
+.features :hover {
+  background: #1a73e8;
+  color: #e8f0fe;
+  border: 2px solid #1a73e8;
+}
+
+/* Pricing Plans */
+.plan.popular {
+  border: 2px solid #1a73e8;
+}
+
+.price {
+  font-size: 24px;
+  color: #1a73e8;
+  margin: 10px 0;
+}
+
+/* Addon Section (Advance Card) */
+.addon {
+  background-color: #0056ff;
+  color: white;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1000px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+
+.opl {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.addon-price {
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  align-items: baseline;
+}
+
+.addon-price span {
+  font-size: 48px;
+}
+
+.addon-price h6 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.addon .select-addon-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: white;
+  color: #0056ff;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.op2 {
+  max-width: 600px;
+}
+
+.op2 h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.op2 p {
+  margin-bottom: 15px;
+}
+
+.op2 hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 20px 0;
+}
+
+.op2 ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.op2 li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.plan ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+.plan li{
+  margin-bottom: 12px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  
+}
+.plan li::before {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.op2 li::before {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Contact */
+.contact {
+  background: #1a73e8;
+  color: white;
+  padding: 60px 20px;
+}
+
+.contact-btn {
+  background: white;
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Top Section */
+.footer-top {
+  background-color: #fefefe;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 250px;
+}
+
+.footer-details {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer-details p {
+  color: #000;
+  font-size: 16px;
+  margin: 0;
+}
+
+.footer-details strong {
+  color: white;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  background-color: #0056ff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.footer-links a {
+  color: white;
+  margin-left: 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .addon {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .opl, .op2 {
+    width: 100%;
+    align-items: center;
+  }
+  .addon .select-addon-btn {
+    float: none;
+    margin: 20px auto 0 auto;
+  }
+  .op2 ul {
+    text-align: center;
+  }
+}
+/* Resume Coaching Section */
+.resume-coaching {
+  font-family: 'Poppins', sans-serif;
+  padding: 60px 20px;
+  text-align: center;
+  background: white;
+  color: #0a0a23;
+}
+
+.resume-coaching h2 {
+  font-size: 32px;
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+
+.resume-coaching p {
+  font-size: 16px;
+  color: #1a73e8;
+  margin-bottom: 40px;
+}
+
+.resume-coaching p strong {
+  color: #1a73e8;
+  cursor: pointer;
+}
+
+/* Cards Layout */
+.coaching-cards {
+  display: flex;
+  justify-content: center;
+  color: #1a73e8;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.coaching-card {
+  background: #fff;
+  border: 2px solid #1a73e8;
+  border-radius: 15px;
+  padding: 30px 20px;
+  width: 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.coaching-card h3 {
+  font-size: 24px;
+  color: #0a0a23;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+
+.price small {
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+}
+
+.coaching-card hr {
+  width: 100%;
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+.coaching-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.coaching-card li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.coaching-card li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  color: #00c853;
+}
+
+/* Button */
+.coaching-btn {
+  background: #1a73e8;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  margin-top: auto;
+}
+
+.coaching-btn:hover {
+  background: white;
+  color: #1a73e8;
+  border: 2px solid #1a73e8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .coaching-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coaching-card {
+    width: 90%;
+  }
+}
