@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutUs.css';
+import './Aboutus.css';
 import ashwin from '../Home/pro.png'; // replace with actual path
 import nicole from '../Home/pro.png'; // replace with actual path
 import linkedinIcon from '../Home/link.png'; // replace with actual path
